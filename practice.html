@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .like-btn {
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: black; /* Default color */
+  transition: color 0.3s ease;
+}
+
+.like-btn.liked {
+  color: red; /* Change color to red when liked */
+}
+    </style>
+</head>
+<body>
+    <div class="post" id="post1">
+        <p>Post 1</p>
+        <button class="like-btn" data-post-id="post1">❤</button>
+        <span class="likes-count" id="likes-post1">0</span> likes
+    </div>
+      
+    <div class="post" id="post2">
+        <p>Post 2</p>
+        <button class="like-btn" data-post-id="post2">❤</button>
+        <span class="likes-count" id="likes-post2">0</span> likes
+    </div>
+    <script>
+        // Select all like buttons
+const likeButtons = document.querySelectorAll('.like-btn');
+
+// Attach click event listeners to each button
+likeButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Get the post ID from the data attribute
+    const postId = button.getAttribute('data-post-id');
+
+    // Find the corresponding likes count element
+    const likesCountElement = document.getElementById(`likes-${postId}`);
+    
+    // Parse the current likes count
+    let currentLikes = parseInt(likesCountElement.textContent, 10);
+
+    // Toggle like state
+    if (!button.classList.contains('liked')) {
+      // If not liked, increment the count and change the color
+      button.classList.add('liked');
+      likesCountElement.textContent = currentLikes + 1;
+    } else {
+      // If already liked, decrement the count and revert the color
+      button.classList.remove('liked');
+      likesCountElement.textContent = currentLikes - 1;
+    }
+  });
+});
+    </script>
+</body>
+</html>
