@@ -394,7 +394,7 @@ window.addEventListener("scroll", function () {
 
 //play && pause && mute video
 let video_container = document.querySelectorAll(".video");
-video_container.forEach(function (item) {
+video_container.forEach(function (item){
   let video = item.children[0];
   //if the user click on the video pause it 
   let button_play = item.children[1].children[1];
