@@ -1,53 +1,18 @@
 {
   "users": [
     {
-      "id": "1876",
+      "id": "1af4",
+      "name": "Vishnuvardhan Kondadi",
+      "email": "kondadivishnuvardhan56@gmail.com",
+      "phone": "9010440505",
+      "password": "Vishnurao@123"
+    },
+    {
+      "id": "3953",
       "name": "Vishnuvardhan Kondadi",
       "email": "kondadivishnuvardhan@gmail.com",
       "phone": "9010440505",
       "password": "Vishnurao@123"
-    },
-    {
-      "id": "b7ba",
-      "name": "Vishnuvardhan Kondadi",
-      "email": "kondadevardhan124@gmail.com",
-      "phone": "9010440505",
-      "password": "Vishnurao@123"
-    },
-    {
-      "id": "558d",
-      "name": "Kondadi Vishnuvardhan",
-      "email": "user1234",
-      "phone": "9010440505",
-      "password": "Vishnu@123"
-    },
-    {
-      "id": "e6ae",
-      "name": "Vishnuvardhan Kondadi",
-      "email": "user1234",
-      "phone": "user1234",
-      "password": "Vishnu@123"
-    },
-    {
-      "id": "1272",
-      "name": "Vishnuvardhan Kondadi",
-      "email": "user1234",
-      "phone": "user1234",
-      "password": "Vishnu@123"
-    },
-    {
-      "id": "606d",
-      "name": "ramu",
-      "email": "user@gmail.com",
-      "phone": "9440023128",
-      "password": "Ramu@123"
-    },
-    {
-      "id": "2b3d",
-      "name": "Nikhil",
-      "email": "dachepallynikhil6301@gmail.com",
-      "phone": "9010440505",
-      "password": "Vishnu@123"
     }
   ],
   "guest": [
