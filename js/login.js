@@ -5,14 +5,14 @@ const loginButton = document.querySelector(".log_btn");
 const guestLoginLink = document.querySelector(".forget-password a");
 
 
-const postGuestUrl = "http://localhost:3000/guest";
+const postGuestUrl = "https://glittery-delicate-bellflower.glitch.me/guest";
 
 loginButton.addEventListener("click", async (e) => {
     e.preventDefault();
     const email = document.getElementById("emai");
     const password = document.getElementById("password");
     try {
-        const result = await fetch("http://localhost:3000/users");
+        const result = await fetch("https://glittery-delicate-bellflower.glitch.me/users");
         const data = await result.json();
         console.log(data);
 

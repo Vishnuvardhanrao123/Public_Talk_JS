@@ -22,7 +22,7 @@ signup.addEventListener("click", async (e) => {
           throw new Error("Please enter an email.");
       }
 
-      const result = await fetch("http://localhost:3000/users");
+      const result = await fetch("https://glittery-delicate-bellflower.glitch.me/users");
       const data = await result.json();
       console.log(data)
       let emailExists = false;
@@ -75,7 +75,7 @@ document.getElementById('verifyOtpButton').addEventListener('click', async () =>
         const password = document.getElementById("password").value.trim();
         const newUser = { name, email, phone, password };
             console.log(newUser);
-            const response = await fetch("http://localhost:3000/users", {
+            const response = await fetch("https://glittery-delicate-bellflower.glitch.me/users", {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newUser)
