@@ -25,7 +25,7 @@ loginButton.addEventListener("click", async (e) => {
             console.log(password.value);
 
             if (user.email === email.value && user.password === password.value) {
-                window.location.href = "http://127.0.0.1:5500/home.html";
+                window.location.href = "https://vishnuvardhanrao123.github.io/Public_Talk_JS/home.html";
                 validUser = true;
                 break;  // Stop checking further once a match is found
             }
@@ -60,7 +60,7 @@ async function handleGuestLogin() {
 
         if (response.ok) {
             // alert("Logged in as guest.");
-            window.location.href = "http://127.0.0.1:5500/home.html";
+            window.location.href = "./home.html";
 
         } else {
             const error = await response.json();
