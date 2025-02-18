@@ -1,6 +1,6 @@
 
-// const email = document.getElementById("emai");
-// const password = document.getElementById("password");
+const email = document.getElementById("emai");
+const password = document.getElementById("password");
 const loginButton = document.querySelector(".log_btn");
 const guestLoginLink = document.querySelector(".forget-password a");
 
