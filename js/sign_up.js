@@ -83,7 +83,7 @@ document.getElementById('verifyOtpButton').addEventListener('click', async () =>
 
             if (response.ok) {
                 alert('OTP verified and user data stored successfully ,Click on Login Below');
-                window.location.href = "./login.html"; // Navigate after successful post
+                window.location.href = "./Login.html"; // Navigate after successful post
             } else {
                 alert('Failed to store user data!');
             }
